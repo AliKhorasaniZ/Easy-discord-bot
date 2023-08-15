@@ -1,12 +1,12 @@
-<span style="font-size: 20px;">Easy-to-Set-Up Discord Music Bot</span>
+<span style="font-size: 40px;">Easy-to-Set-Up Discord Music Bot</span>
 
 This repository provides an easy-to-use solution for setting up and configuring a Discord music bot.
 The bot supports both YouTube and Soundcloud platforms and can be further customized by adding new code and modules.
 
 REQUIRMENTS:
 
-- Python installed on your system ([Donwload Python](https://www.python.org/downloads/))
-- A Discord bot account and token ([Set up a discord bot account](https://discordpy.readthedocs.io/en/stable/discord.html))
+- Python installed on your system ( [Download Python](https://www.python.org/downloads/) )
+- A Discord bot account and token ( [Set up a discord bot account](https://discordpy.readthedocs.io/en/stable/discord.html) )
 
 SETUP INSTRUCTIONS:
 
