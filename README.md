@@ -10,6 +10,7 @@ The bot supports both YouTube and Soundcloud platforms and can be further custom
   - [Windows](#Windows)
   - [Mac / Linux](#Mac/Linux)
 - [Configuration Guide](#ConfigurationGuide)
+- [Commands](#Commands)
 
 <a name="Requirments"></a>
 
