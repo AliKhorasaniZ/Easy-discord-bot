@@ -24,18 +24,18 @@ The bot supports both YouTube and Soundcloud platforms and can be further custom
 ## **Setup Instructions** :
 
 1. Clone this repository to a directory of your choice on your local system.
-2. Navigate to the main folder and open the .env file.
-3. In the .env file, add your bot token followed by your preferred prefix for bot commands (defaults to "&").
-4. Save and close the .env file.
-5. Follow the relevant instructions below based on your operating system.
+2. Save and close the .env file.
+3. Follow the relevant instructions below based on your operating system.
 
 <a name="Windows"></a>
 
 ### For windows users:
 
-6. Run setup.bat located in the main directory.
-7. Wait for the batch script to execute and close.
-8. The setup process is complete. To start the bot, run start.bat.
+4. Run setup.bat located in the main directory.
+5. Wait for the batch script to execute and close.
+6. Navigate to the main folder and open the .env file.
+7. In the .env file, add your bot token followed by your preferred prefix (optional) and discord username (optional, prefix defaults to "&").
+9. The setup process is complete. To start the bot, run start.bat.
 
 <a name="Mac/Linux"></a>
 
