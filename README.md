@@ -45,6 +45,13 @@ The bot supports both YouTube and Soundcloud platforms and can be further custom
 8. Wait for the script to complete.
 9. The setup process is done. To start the bot, run start.sh.
 
+<a name="Commands"></a>
+
+## **Commands** :
+
+- commandslist -- Displays a list of all music related commands
+- status -- Displays the your bots current status
+
 <a name="ConfigurationGuide"></a>
 
 ## **Configuration guide** :
