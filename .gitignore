@@ -1,4 +1,5 @@
 Logs/
 bot-env/
-.env
 new-modules/
+__pychache__/
+.env

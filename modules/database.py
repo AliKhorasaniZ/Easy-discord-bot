@@ -10,9 +10,6 @@ async def setup(client):
 
 class database(commands.Cog):
 
-    connection = sqlite3.connect('database.db')
-    do = connection.cursor()
-
     uptime = str(dt.datetime.now().strftime("%H:%M, %B %d, %Y"))
 
     def __init__(self, client):
