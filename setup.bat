@@ -15,5 +15,12 @@ copy "ffmpeg\ffprobe.exe" "bot-env\Scripts"
 rem Deactivate virtual environment
 call "bot-env\Scripts\deactivate"
 
+rem Create .env file
+(
+    echo TOKEN=your_token_here
+    echo PREFIX=prefix_here
+    echo OWNERS_DISCORD_USERNAME=your_username_here
+) >> .env
+
 rem Echo setup completion message
 echo "Setup completed."

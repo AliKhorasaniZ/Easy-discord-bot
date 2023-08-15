@@ -1,7 +1,13 @@
-import sqlite3
 import datetime as dt
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
+import os
+
+env_file_path = "../.env"
+load_dotenv(dotenv_path=env_file_path)
+OWNERS_DISCORD_USERNAME = os.getenv("OWNERS_DISCORD_USERNAME")
+PREFIX = os.getenv("PREFIX")
 
 
 async def setup(client):
@@ -33,32 +39,71 @@ class database(commands.Cog):
 
         # ------------------------------------------------------------------
 
+        CLIENT_NAME = client.user.name
+
+        # ------------------------------------------------------------------
+
         infoEmbed = discord.Embed(
 
-            title="PSB bot | status info",
-            description='Following information represents PSBs status:',
+            title=f"{CLIENT_NAME} | status info",
+            description=f"Following information represents {CLIENT_NAME} status:",
             colour=discord.Colour.from_rgb(0, 255, 255)
 
         )
 
+        infoEmbed.add_field(name='Ping:', value=(
+            '(' + str(ping) + ') ms'), inline=False)
         infoEmbed.add_field(name='Up time:', value=(
             'Online Since (' + database.uptime + ')'), inline=False)
-        infoEmbed.add_field(
-            name='Birth day:', value='PSB was born on (11th November 2021)', inline=False)
 
-        infoEmbed.add_field(name='Number of servers:', value='🔴 in (' +
-                            number_of_servers + ') servers', inline=True)
+        infoEmbed.add_field(name='Number of servers:', value='In (' +
+                            number_of_servers + ') servers', inline=False)
 
-        infoEmbed.add_field(name='Bots ping:', value=(
-            '🔴 (' + str(ping) + ') ms'), inline=True)
-        infoEmbed.add_field(name='Bots prefix:',
-                            value='Using "&"', inline=True)
+        infoEmbed.add_field(name='Command prefix:',
+                            value=f"{PREFIX}", inline=False)
 
-        infoEmbed.add_field(name='Location:', value=':flag_se: Sweden')
-        infoEmbed.add_field(name='Version:', value='📱 Version 3.1')
+        infoEmbed.set_footer(text=f'Contact owner : {OWNERS_DISCORD_USERNAME}')
 
-        infoEmbed.set_thumbnail(
-            url='https://cdn.discordapp.com/attachments/678610661986664459/931933901092438086/Tumbnail.png')
-        infoEmbed.set_footer(text='Contact owner : Ψ |¦ PSI ¦| Ψ  # 2653')
+        await ctx.send(embed=infoEmbed)
+
+    @commands.command()
+    async def commandslist(self, ctx):
+
+        infoEmbed = discord.Embed(
+
+            title=f"List of commands",
+            description=f"List of default commands:",
+            colour=discord.Colour.from_rgb(0, 255, 255)
+
+        )
+
+        infoEmbed.add_field(name=f'{PREFIX}play [track name]', value=(
+            "Plays the requested track"), inline=False)
+
+        infoEmbed.add_field(name=f'{PREFIX}join', value=(
+            "Causes the bot to connect to your channel"), inline=False)
+
+        infoEmbed.add_field(name=f'{PREFIX}leave', value=(
+            "Causes the bot to leave your channel"), inline=False)
+
+        infoEmbed.add_field(name=f'{PREFIX}pause', value=(
+            "Pauses the current track"), inline=False)
+
+        infoEmbed.add_field(name=f'{PREFIX}resume', value=(
+            "Resumes the current track"), inline=False)
+
+        infoEmbed.add_field(name=f'{PREFIX}skip', value=(
+            "Skips the current track"), inline=False)
+
+        infoEmbed.add_field(name=f'{PREFIX}loop', value=(
+            "Loops the current track"), inline=False)
+
+        infoEmbed.add_field(name=f'{PREFIX}queuelist', value=(
+            "Displays a list of the queued tracks"), inline=False)
+
+        infoEmbed.add_field(name=f'{PREFIX}queuerem [track index]', value=(
+            "Removes the corresponding track from queue"), inline=False)
+
+        infoEmbed.set_footer(text=f'Contact owner : {OWNERS_DISCORD_USERNAME}')
 
         await ctx.send(embed=infoEmbed)
