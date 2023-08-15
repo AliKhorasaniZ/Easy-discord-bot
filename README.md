@@ -1,4 +1,4 @@
-<span style="font-size: 40px;">Easy-to-Set-Up Discord Music Bot</span>
+<h1>Easy-to-Set-Up Discord Music Bot</h1>
 
 This repository provides an easy-to-use solution for setting up and configuring a Discord music bot.
 The bot supports both YouTube and Soundcloud platforms and can be further customized by adding new code and modules.
