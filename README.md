@@ -18,9 +18,9 @@ The bot supports both YouTube and Soundcloud platforms and can be further custom
 - Python installed on your system ( [Download Python](https://www.python.org/downloads/) )
 - A Discord bot account and token ( [Set up a discord bot account](https://discordpy.readthedocs.io/en/stable/discord.html) )
 
-<a name="Setup instructions"></a>
+<a name="SetupInstructions"></a>
 
-## **SetupInstructions** :
+## **Setup Instructions** :
 
 1. Clone this repository to a directory of your choice on your local system.
 2. Navigate to the main folder and open the .env file.
