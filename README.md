@@ -11,6 +11,8 @@ The bot supports both YouTube and Soundcloud platforms and can be further custom
   - [Mac / Linux](#Mac/Linux)
 - [Configuration Guide](#ConfigurationGuide)
 
+![Thumbnail](https://cdn.discordapp.com/attachments/678610661986664459/931933901092438086/Tumbnail.png)
+
 <a name="Requirments"></a>
 
 ## **Requirments** :
