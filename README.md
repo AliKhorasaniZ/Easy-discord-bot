@@ -12,7 +12,7 @@ The bot supports both YouTube and Soundcloud platforms and can be further custom
 - [Configuration Guide](#ConfigurationGuide)
 
 
-<img src="[image.jpg](https://cdn.discordapp.com/attachments/678610661986664459/931933901092438086/Tumbnail.png)" alt="Image" style="margin: 20px;">
+<img src="https://cdn.discordapp.com/attachments/678610661986664459/931933901092438086/Tumbnail.png" alt="Image" style="margin: 20px;">
 
 <a name="Requirments"></a>
 
