@@ -44,7 +44,9 @@ The bot supports both YouTube and Soundcloud platforms and can be further custom
 6. Navigate to the "For-Mac" directory.
 7. Execute Mac-setup.sh using the bash shell.
 8. Wait for the script to complete.
-9. The setup process is done. To start the bot, run start.sh.
+9. Navigate to the main folder and open the .env file.
+10. In the .env file, add your bot token followed by your preferred prefix (optional) and discord username (optional, prefix defaults to "&").
+11. The setup process is done. To start the bot, run start.sh.
 
 <a name="Commands"></a>
 
