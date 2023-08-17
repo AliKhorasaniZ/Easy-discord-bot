@@ -24,29 +24,27 @@ The bot supports both YouTube and Soundcloud platforms and can be further custom
 ## **Setup Instructions** :
 
 1. Clone this repository to a directory of your choice on your local system.
-2. Save and close the .env file.
-3. Follow the relevant instructions below based on your operating system.
 
 <a name="Windows"></a>
 
 ### For windows users:
 
-4. Run setup.bat located in the main directory.
-5. Wait for the batch script to execute and close.
-6. Navigate to the main folder and open the .env file.
-7. In the .env file, add your bot token followed by your preferred prefix (optional) and discord username (optional, prefix defaults to "&").
-9. The setup process is complete. To start the bot, run start.bat.
+2. Run setup.bat located in the main directory.
+3. Wait for the batch script to execute and close.
+4. Navigate to the main folder and open the .env file.
+5. In the .env file, add your bot token (required) followed by your preferred prefix (optional, prefix defaults to "&") and discord username (optional).
+6. The setup process is complete. To start the bot, run start.bat.
 
 <a name="Mac/Linux"></a>
 
 ### For mac / linux users:
 
-6. Navigate to the "For-Mac" directory.
-7. Execute Mac-setup.sh using the bash shell.
-8. Wait for the script to complete.
-9. Navigate to the main folder and open the .env file.
-10. In the .env file, add your bot token followed by your preferred prefix (optional) and discord username (optional, prefix defaults to "&").
-11. The setup process is done. To start the bot, run start.sh.
+2. Navigate to the "For-Mac" directory.
+3. Execute Mac-setup.sh using the bash shell.
+4. Wait for the script to complete.
+5. Navigate to the main folder and open the .env file.
+6. In the .env file, add your bot token (required) followed by your preferred prefix (optional, prefix defaults to "&") and discord username (optional).
+7. The setup process is done. To start the bot, run start.sh.
 
 <a name="Commands"></a>
 
